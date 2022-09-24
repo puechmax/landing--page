@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    color: #222222;
+    background: #fff;
+}
+
+#presentation {
+    background: rgb(146, 158, 255);
+    background: linear-gradient(84deg, rgba(146, 158, 255, 1) 0%, rgba(255, 115, 115, 1) 75%);
+    padding: 80px 0;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+#presentation .flex {
+    justify-content: space-between;
+}
+
+#presentation .rght,
+#presentation .lft {
+    width: 50%;
+}
+
+#presentation h3 {
+    color: #fff;
+    font-size: 45px;
+}
+
+#presentation p {
+    font-size: 17px;
+    color: #fff;
+    margin-top: 30px;
+    line-height: 1.6;
+}
+
+#presentation .rght img {
+    width: 100%;
+}
+
+
+#presentation .lft {
+    padding-right: 50px;
+}
+
+#fonctionnement {
+    padding: 80px 0;
+}
+
+#fonctionnement .col {
+    width: 50%;
+}
+
+#fonctionnement .rght {
+    position: relative;
+}
+
+#fonctionnement .rght::before {
+    content: "";
+    background: rgb(146, 158, 255);
+    background: linear-gradient(84deg, rgba(146, 158, 255, 1) 0%, rgba(255, 115, 115, 1) 75%);
+    width: 95%;
+    display: block;
+    height: 90%;
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    z-index: 0;
+    border-radius: 100%;
+}
+
+.ttl {
+    font-size: 40px;
+}
+
+#fonctionnement .lft {
+    padding-right: 50px;
+}
+
+#fonctionnement .lft .ttl {
+    margin-bottom: 40px;
+}
+
+#fonctionnement .lft p {
+    margin-top: 15px;
+}
+
+#fonctionnement .rght img {
+    width: 80%;
+    display: block;
+    position: relative;
+    z-index: 1;
+    margin: 0 auto;
+}
+
+#modeles {
+    padding: 80px 0;
+}
+
+#modeles .subttl,
+#modeles .ttl {
+    text-align: center;
+}
+
+#modeles .flex {
+    gap: 20px;
+
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+#modeles .crd {
+    width: calc(33.333% - 20px);
+    border: 1px solid #ddd;
+    padding: 30px 20px;
+}
+
+#modeles .crd img {
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    background: linear-gradient(84deg, rgba(255, 115, 115, 1) 0%, rgba(146, 158, 255, 1) 75%);
+    color: #fff;
+    border-radius: 100%;
+    margin: 0 auto;
+    display: block;
+    box-shadow: 3px 5px 4px rgb(201, 201, 201);
+}
+
+#modeles .crd h4 {
+    text-align: center;
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+#modeles .crd p {
+    text-align: center;
+    margin-top: 30px;
+    color: #434343;
+}
+
+
+#achat {
+    padding: 100px 0;
+
+}
+
+#achat .wrp {
+    background: rgb(146, 158, 255);
+    background: linear-gradient(84deg, rgba(255, 115, 115, 1) 0%, rgba(146, 158, 255, 1) 75%);
+    padding: 100px;
+    border-radius: 30px;
+}
+
+#achat .wrp .subttl,
+#achat .wrp .ttl {
+    color: #fff;
+}
+
+#achat .rght {
+    margin-bottom: -100px;
+}
+
+#achat .rght img {
+    width: 100%;
+}
+
+.button {
+    background: rgb(146, 158, 255);
+    background: linear-gradient(84deg, rgba(146, 158, 255, 1) 0%, rgba(255, 115, 115, 1) 75%);
+    padding: 13px 40px;
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    border-radius: 30px;
+    transition: .4s ease;
+}
+
+#achat .button {
+    background: #fff;
+    color: rgba(255, 115, 115, 1);
+    font-weight: 800;
+    margin-top: 30px;
+}
+
+footer {
+    background: #262A37;
+    text-align: center;
+    color: #ddd;
+    padding: 30px 0;
+    font-size: 15px;
+}
+
+
+@media screen and (max-width: 820px) {
+    #achat .wrp {
+        padding: 70px !important;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    #presentation .flex {
+        flex-direction: column-reverse;
+        gap: 50px;
+    }
+
+    #presentation .flex .col {
+        width: 100%;
+        padding: 0;
+    }
+
+    #presentation h3 {
+        color: #fff;
+        font-size: 34px;
+    }
+
+    #fonctionnement .flex {
+        flex-direction: column-reverse;
+        gap: 50px;
+    }
+
+    #fonctionnement .col {
+        width: 100%;
+        padding: 0;
+    }
+
+    .ttl {
+        font-size: 30px;
+    }
+
+    #modeles .flex {
+        flex-direction: column;
+    }
+
+    #modeles .crd {
+        width: 100%;
+    }
+
+    #achat .wrp {
+        padding: 40px !important;
+    }
+
+    #achat .flex {
+        gap: 50px;
+        flex-direction: column;
+    }
+
+    #achat .rght {
+        margin-bottom: -40px;
+    }
+}
